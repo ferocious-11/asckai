@@ -1,0 +1,17 @@
+.homepage-content {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .content-header {
+        font-weight: 300;
+        color: #607D8B;
+    }
+
+    .content-body {
+        color: #607D8B;
+    }
+}

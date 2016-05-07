@@ -1,0 +1,22 @@
+{
+    "extends": ["airbnb/base", "plugin:react/recommended"],
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "comma-dangle": 0,
+        "indent": ["error", 4],
+        "no-unresolved": 0,
+        "import/no-unresolved": 0
+    }
+}
