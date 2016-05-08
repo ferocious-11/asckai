@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
+import { connect } from 'react-redux';
 
-import { indigo900 } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import baseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import HomePage from './components/HomePage/HomePage.js';
+import MenuPage from './components/MenuPage/MenuPage.js';
 
-import styles from './base.css';
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -18,15 +17,16 @@ const muiTheme = getMuiTheme({
 class Main extends Component {
     render() {
         return <MuiThemeProvider muiTheme={muiTheme}>
-            <HomePage />
+            {this.props.children}
         </MuiThemeProvider>;
     }
 }
 
 
 const routes = (
-    <Route path='/' name='root' component={Main}>
-        {/* Add more paths here */}
+    <Route component={Main}>
+        <Route path='/' name='root' component={HomePage} />
+        <Route path='/menu' name='menu' component={MenuPage} />
     </Route>
 );
 

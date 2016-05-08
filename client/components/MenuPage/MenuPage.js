@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 
 import CenterJumbotron from '../CenterJumbotron/CenterJumbotron.js';
-import HomePageBody from './HomePageBody/HomePageBody.js';
+import MenuList from './MenuList/MenuList.js';
 import Footer from '../Footer/Footer.js';
 
-class HomePage extends Component {
+import styles from './menuPage.css';
+
+class MenuPage extends Component {
     render() {
-        return <div>
+        return <div className={styles.MenuPage}>
             <CenterJumbotron />
-            <HomePageBody />
+            <MenuList />
             <Footer />
         </div>;
     }
 }
 
-HomePage.childContextTypes = {
+MenuPage.childContextTypes = {
     muiTheme: React.PropTypes.object.isRequired,
 };
 
-export default HomePage;
+export default MenuPage;

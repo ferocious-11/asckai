@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+    background: #607D8B;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .link {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-weight: 300;
+        margin: 0 10px;
+    }
+}
