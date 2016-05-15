@@ -6,11 +6,7 @@ import Footer from '../Footer/Footer.js';
 
 class HomePage extends Component {
     render() {
-        return <div>
-            <CenterJumbotron />
-            <HomePageBody />
-            <Footer />
-        </div>;
+        return <HomePageBody />;
     }
 }
 

@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { Paper, TextField, FlatButton } from 'material-ui';
+import {
+    Paper,
+    TextField,
+    FlatButton,
+    Stepper,
+    Step,
+    StepButton } from 'material-ui';
 
 import styles from './homePageContent.css';
 
@@ -14,7 +20,36 @@ class HomePageContent extends Component {
             boxSizing: 'border-box'
         };
 
+        const stepStyle = {
+            width: '100%',
+            padding: '20px',
+            marginBottom: '50px'
+        };
+
         return <div className={styles['homepage-content']}>
+
+            <Paper zDepth={1} style={stepStyle}>
+                <h2 className={styles['content-header']}>Four Easy Steps</h2>
+
+                <Stepper linear={false} activeStep={-1}>
+                    <Step>
+                        <StepButton>Enter phone number</StepButton>
+                    </Step>
+
+                    <Step>
+                        <StepButton>Enter password</StepButton>
+                    </Step>
+
+                    <Step>
+                        <StepButton>Enter bill details</StepButton>
+                    </Step>
+
+                    <Step>
+                        <StepButton>Review and pay!</StepButton>
+                    </Step>
+                </Stepper>
+            </Paper>
+
             <Paper zDepth={1} style={cardStyle}>
                 <h2 className={styles['content-header']}>SSL Secured</h2>
                 <p className={styles['content-body']}>

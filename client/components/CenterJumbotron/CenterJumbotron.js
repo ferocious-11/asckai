@@ -19,16 +19,7 @@ class TitleBar extends Component {
         return <div className={styles['jumbo-container']}>
             <div className={styles.wrapper} onClick={this.handleClick}>
                 <div className={styles['logo-container']}>
-                    <i
-                        className="material-icons"
-                        style={{
-                            fontSize: '160px',
-                            color: 'white',
-                            position: 'relative',
-                            left: '-10px'
-                        }}>account_balance_wallet</i>
-
-                    <span className={styles['logo-text']}>asckai</span>
+                    <span className={styles['logo-text']}>subha pay</span>
                 </div>
             </div>
         </div>;

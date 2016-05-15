@@ -1,6 +1,6 @@
 .centerJumbotron_jumbo-container_2XyKFF {
     width: 100%;
-    height: 310px;
+    min-height: 310px;
     background-color: #607D8B;
     display: -ms-flexbox;
     display: flex;
@@ -12,7 +12,7 @@
         align-items: center;
 }
 .centerJumbotron_jumbo-container_2XyKFF .centerJumbotron_wrapper_34Vn6U {
-    width: 500px;
+    width: 800px;
     height: 100%;
     cursor: pointer;
 }
@@ -44,6 +44,26 @@
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+.footer_footer_1WRK-b {
+    width: 100%;
+    background: #607D8B;
+    min-height: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.footer_footer_1WRK-b .footer_link_1Jc-gk {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin: 0 10px;
 }
 .homePageContent_homepage-content_ohVOTW {
     max-width: 800px;
@@ -83,26 +103,6 @@
     -ms-flex-align: center;
     align-items: center;
 }
-.footer_footer_1WRK-b {
-    width: 100%;
-    background: #607D8B;
-    height: 40px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-}
-.footer_footer_1WRK-b .footer_link_1Jc-gk {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-weight: 300;
-    margin: 0 10px;
-}
 .menuList_menu-list_3WH_tw {
     padding: 20px 0;
     max-width: 800px;
@@ -122,6 +122,34 @@
 }
 .menuList_menu-list_3WH_tw .menuList_menu-item-body_2qW3WH {
     color: #607D8B;
+}
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+    color: #607D8B;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.base_container_29ypqG {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 100%;
+}
+
+.base_contentContainer_1P4C3P {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map*/
